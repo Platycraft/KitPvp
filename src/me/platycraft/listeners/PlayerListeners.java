@@ -60,6 +60,7 @@ public class PlayerListeners implements Listener {
     	e.getDrops().clear();
     	e.setDeathMessage("" + ChatColor.BLUE + e.getEntity() + ChatColor.AQUA + "was killed by" + ChatColor.RED + p.getKiller());
     	p.sendMessage(ChatColor.AQUA + "Your death was by" + ChatColor.RED + k.getName());
+    	k.sendMessage(ChatColor.AQUA + "Congrats! You killed " + ChatColor.RED + p.getName());
     	
     }
     
