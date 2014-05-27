@@ -109,19 +109,8 @@ if (cmd.getName().equalsIgnoreCase("amateur") && sender instanceof Player){
 			p.getInventory().addItem(amateurbow);
 			p.getInventory().addItem(new ItemStack(Material.ARROW, 1));
 			p.sendMessage(ChatColor.AQUA + "You was given the" + ChatColor.BOLD + ChatColor.ITALIC + ChatColor.YELLOW + "Amateur KIT !");
-			
-			
-			
-			
-			
-			
-		}
-		
-		
+			}
 		return false;		
 	}
-	
-	
-	
-	
+
 }
