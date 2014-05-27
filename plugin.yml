@@ -1,0 +1,10 @@
+name: KitPvP
+main: me.platycraft.Main
+version: 1.0
+commands:
+    starter:
+        description: This gives player the starter kit.
+        usage: /starter
+    amature:
+        description: This gives player the amature kit.
+        usage: /amature
