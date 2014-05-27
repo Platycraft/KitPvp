@@ -76,37 +76,37 @@ public class Main extends JavaPlugin {
 		}
 		// End of start command
 		
-		//Amature Command 
+		//amature Command 
 		
 if (cmd.getName().equalsIgnoreCase("amateur") && sender instanceof Player){
 			
 			Player p = (Player) sender;
 			p.getInventory().clear();
-			ItemStack amateurbow = new ItemStack(Material.BOW);
-			ItemMeta m = amateurbow.getItemMeta();
+			ItemStack amaturebow = new ItemStack(Material.BOW);
+			ItemMeta m = amaturebow.getItemMeta();
 			m.setDisplayName("" + ChatColor.YELLOW + ChatColor.BOLD + "AMATEUR BOW!");
-			amateurbow.setItemMeta(m);
-			amateurbow.addEnchantment(Enchantment.DURABILITY, 1);
-			amateurbow.addEnchantment(Enchantment.ARROW_INFINITE, 1);
-			p.getInventory().addItem(amateurbow);
+			amaturebow.setItemMeta(m);
+			amaturebow.addEnchantment(Enchantment.DURABILITY, 1);
+			amaturebow.addEnchantment(Enchantment.ARROW_INFINITE, 1);
+			p.getInventory().addItem(amaturebow);
 			p.getInventory().addItem(new ItemStack(Material.ARROW, 1));
 			p.getInventory().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
 			p.getInventory().setLeggings(new ItemStack(Material.LEATHER_BOOTS));
 			p.setMaxHealth(30);
 			p.setHealth(30);
 			p.sendMessage(ChatColor.AQUA + "You was given the" + ChatColor.BOLD + ChatColor.ITALIC + ChatColor.GREEN + "Starter KIT !");
-			ItemStack amateursword = new ItemStack(Material.WOOD_SWORD);
-			ItemMeta n = amateursword.getItemMeta();
+			ItemStack amaturesword = new ItemStack(Material.WOOD_SWORD);
+			ItemMeta n = amaturesword.getItemMeta();
 			n.setDisplayName("" + ChatColor.YELLOW + ChatColor.BOLD + "AMATUER BOW!");
-			amateursword.setItemMeta(n);
-			amateursword.addEnchantment(Enchantment.DAMAGE_ALL, 1);
-			amateursword.addEnchantment(Enchantment.KNOCKBACK, 1);
+			amaturesword.setItemMeta(n);
+			amaturesword.addEnchantment(Enchantment.DAMAGE_ALL, 1);
+			amaturesword.addEnchantment(Enchantment.KNOCKBACK, 1);
 			p.getInventory().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
 			p.getInventory().setBoots(new ItemStack(Material.LEATHER_BOOTS));
 			p.getInventory().setHelmet(new ItemStack(Material.LEATHER_HELMET));
 			p.getInventory().setLeggings(new ItemStack(Material.LEATHER_LEGGINGS));
-			p.getInventory().addItem(amateursword);
-			p.getInventory().addItem(amateurbow);
+			p.getInventory().addItem(amaturesword);
+			p.getInventory().addItem(amaturebow);
 			p.getInventory().addItem(new ItemStack(Material.ARROW, 1));
 			p.sendMessage(ChatColor.AQUA + "You was given the" + ChatColor.BOLD + ChatColor.ITALIC + ChatColor.YELLOW + "Amateur KIT !");
 			}
